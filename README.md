@@ -6,7 +6,7 @@ An attempt at the Kaggle Data Science Bowl 2019
 Requirements
 ------------
 
-Before you install the data, you must create a Kaggle API token and put it in `~/.kaggle/kaggle.json`. You can generate this token from https://www.kaggle.com/<username>/account or by following the alternate instructions at https://github.com/Kaggle/kaggle-api.
+Before you install the data, you must create a Kaggle API token and put it in `~/.kaggle/kaggle.json`. You can generate this token from `https://www.kaggle.com/<username>/account` or by following the alternate instructions at https://github.com/Kaggle/kaggle-api.
     
 Data download
 -------------
@@ -22,8 +22,6 @@ Project Organization
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
