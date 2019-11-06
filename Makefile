@@ -20,7 +20,7 @@ requirements:
 ## Make Dataset
 data: requirements
 	kaggle competitions download -c data-science-bowl-2019 -p data/raw/
-	unzip data/raw/data-science-bowl-2019.zip
+	unzip -u data/raw/data-science-bowl-2019.zip -d data/raw
 	
 
 ## Delete all compiled Python files
