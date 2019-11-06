@@ -1,4 +1,4 @@
-.PHONY: clean data lint requirements sync_data_to_s3 sync_data_from_s3
+.PHONY: clean data lint requirements 
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -9,18 +9,12 @@ PROFILE = default
 PROJECT_NAME = kaggle_bowl
 PYTHON_INTERPRETER = python
 
-ifeq (,$(shell which conda))
-HAS_CONDA=False
-else
-HAS_CONDA=True
-endif
-
 #################################################################################
 # COMMANDS                                                                      #
 #################################################################################
 
 ## Install Python Dependencies
-requirements: test_environment
+requirements:
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 
 ## Make Dataset
@@ -36,10 +30,6 @@ clean:
 ## Lint using flake8
 lint:
 	flake8 src
-
-## Test python environment is setup correctly
-test_environment:
-	$(PYTHON_INTERPRETER) test_environment.py
 
 #################################################################################
 # PROJECT RULES                                                                 #
