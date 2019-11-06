@@ -1,4 +1,4 @@
-# Kaggle Data Science Bowl 2019
+Kaggle Data Science Bowl 2019
 ==============================
 
 An attempt at the Kaggle Data Science Bowl 2019
